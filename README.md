@@ -1,0 +1,1 @@
+# Clevo-NB50TK1-Hackintosh-OC
