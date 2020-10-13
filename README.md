@@ -27,6 +27,7 @@ Download [ClevoService](https://github.com/FreeJHack/ClevoService) and place `co
 ## What doesn't work?
 
 * dGPU: Since NVIDIA has no support since Mojave, the best way to run this card is by disabling it. By disabling the card in ACPI, the card will not consume any power, so the battery life is pretty good.
+* Mini DisplayPort
 * HDMI Hotplug: This is an issue, we can't currently fix. To fix it, shut down the laptop and boot it while the HDMI is plugged in.
 * Trackpad only has basic gestures
 
