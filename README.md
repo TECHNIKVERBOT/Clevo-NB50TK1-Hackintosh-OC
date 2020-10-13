@@ -22,7 +22,7 @@ Everything except dGPU
 
 ### How to improve the Hackintosh experience
 
-Download [ClevoService](https://github.com/FreeJHack/ClevoService) and place `com.fjhk.ClevoService.agent.plist` in `/Library/LaunchAgents/`
+Download [ClevoService](https://github.com/FreeJHack/ClevoService) and place `com.fjhk.ClevoService.agent.plist` into `/Library/LaunchAgents/` and inject `ClevoService.kext` into `/Library/Extensions`
 
 ## What doesn't work?
 
