@@ -12,7 +12,7 @@ CPU | Intel Core i3-8100
 iGPU | Intel UHD 630
 dGPU | NVIDIA GTX 1050Ti (disabled)
 RAM | 16GB
-SSD | 128GB M.2
+SSD | 128GB M.2 SATA
 WiFi | Intel® Dualband-Wireless-AC 3168
 Software | macOS 11.0 Big Sur
 
@@ -28,7 +28,7 @@ Download [ClevoService](https://github.com/FreeJHack/ClevoService) and place `co
 
 * dGPU: Since NVIDIA has no support since Mojave, the best way to run this card is by disabling it. By disabling the card in ACPI, the card will not consume any power, so the battery life is pretty good.
 * HDMI Hotplug: This is an issue, we can't currently fix. To fix it, shut down the laptop and boot it while the HDMI is plugged in.
-* Basic Trackpad gestures
+* Trackpad only has basic gestures
 
 ## How to install
 
