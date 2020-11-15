@@ -25,10 +25,10 @@ Software | macOS 10.15.7 Catalina (Big Sur going to be tested soon)
 * Sleep
 * Keyboard backlight control incl. RGB
 * Sound (incl. audio jack)
-* WiFi (if using Airportitlwm, not included)
-* Bluetooth (if using IntelBluetoothFirmware, untested and not included)
-* iGPU acceleration (UHD 630)
-* HDMI
+* WiFi
+* Bluetooth
+* Full iGPU acceleration (UHD 630)
+* HDMI (partially)
 
 ### How to get function keys and KBD backlight control working
 
@@ -36,7 +36,7 @@ Download [ClevoService](https://github.com/FreeJHack/ClevoService), install `com
 
 ## What doesn't work?
 
-* dGPU: Since Pascal GPUs have no support since Mojave, it's disabled. By disabling and setting the card into D3 in ACPI, the lowest power state a device can support, the GPU will barely consume any power, so battery life should be improved as well.
+* dGPU: Since Pascal GPUs have no support since Mojave, it's disabled. By disabling and setting the card into D3 in ACPI, the lowest power state a device can support, the GPU will barely consume any power, so battery life should be improved as a result.
 * Mini DisplayPort as it's directly conntected to the dGPU
 * HDMI Hotplug: This is an issue, we are currently looking into. To get around this, HDMI has to be plugged in during bootup.
 * Trackpad has no Magic TrackPad 2 emulation
@@ -45,16 +45,11 @@ Download [ClevoService](https://github.com/FreeJHack/ClevoService), install `com
 
 Download this repo and place the EFI folder into your EFI Partition... That's it.
 
-## How to Install macOS Big Sur Beta
+## How to Install macOS Big Sur
 
-There are two ways you can install Big Sur:
-
-Have a working install of macOS, then download the Installer by installing the beta profile and then downloading Big Sur through the "Software Update" section. Then make a bootable Installer with `createinstallmedia` by using this command in Terminal `sudo /Applications/Install\ macOS\ Big\ Sur\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`
+Have a working install of macOS, download the Installer from the App Store, then make a bootable Installer with `createinstallmedia` by using this command in Terminal `sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`
 
 After you made a bootable Installer, copy the EFI folder to the EFI partition and install as usual. After the installation, mount the EFI of the installed OS and copy the EFI folder to its partition.
-
-A note on Intel WiFi and Bluetooth: While it's possible to get them working with Airportitlwm and IntelBluetoothFirmware, they're not included in this EFI because of stability reasons.
-The best advice is getting a card with a supported broadcom chipset like the DW1560, DW1830 or BCM94360NG. A list of supported wifi cards and the needed kexts can be found here: https://dortania.github.io/Wireless-Buyers-Guide/
 
 
 ## Credits
