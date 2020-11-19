@@ -47,7 +47,11 @@ Download this repo and place the EFI folder into your EFI Partition... That's it
 
 ## How to Install macOS Big Sur
 
-Have a working install of macOS, download the Installer from the App Store, then make a bootable Installer with `createinstallmedia` by using this command in Terminal `sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`
+There are two ways you can make a USB installer:
+
+1. Have a working install of macOS, download the Installer from the App Store, then make a bootable Installer with `createinstallmedia` by using this command in Terminal `sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`
+
+2. If you are using Windows, use [macrecovery.py](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html#making-the-installer) from the offical OpenCore release package.
 
 After you made a bootable Installer, copy the EFI folder to the EFI partition and install as usual. After the installation, mount the EFI of the installed OS and copy the EFI folder to its partition.
 
