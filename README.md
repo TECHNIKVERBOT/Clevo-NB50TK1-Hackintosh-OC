@@ -60,7 +60,7 @@ After you made a bootable Installer, copy the EFI folder to the EFI partition an
 
 Thanks to:
 
-* sha106b and SkyrilHD (for making an EFI that is working very well)
+* TECHNIKVERBOT and SkyrilHD (for making an EFI that is working very well)
 * acidanthera (for making OpenCore)
 * dortania (helping with their troubleshooting guide)
 * and to our tester
