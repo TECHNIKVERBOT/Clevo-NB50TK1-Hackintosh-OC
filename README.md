@@ -1,4 +1,4 @@
-# Clevo-NB50TK1-Hackintosh-OC
+# Clevo-NB50TK1-Hackintosh-OC (discontinued)
 
 ### This repo includes the OpenCore EFI with all the fixes for NB50TK1 on Big Sur.
 
@@ -14,7 +14,7 @@ dGPU | NVIDIA GTX 1050 Ti (disabled)
 RAM | 16 GB DDR4
 SSD | 128 GB M.2 (SATA)
 WiFi | Intel® Dualband-Wireless-AC 3168
-Software | macOS 10.15.7 Catalina (Big Sur going to be tested soon)
+Software | macOS 10.15.7 Catalina
 
 ## What works?
 
